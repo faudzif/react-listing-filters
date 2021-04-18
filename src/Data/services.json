@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "cateogryName": "Main Category",
+        "cateogryTitle": "Main Category Title",
+        "subCategories": [
+            {
+                "id": 1,
+                "cateogryName": "Sub Cateogry",
+                "cateogryTitle": "Sub Cateogry Title",
+                "services": [
+                    {
+                        "id": 1,
+                        "name": "Service 1",
+                        "url": "url",
+                        "icon": "icon"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "cateogryName": "Main Category",
+        "cateogryTitle": "Main Category Title",
+        "subCategory": [
+            {
+                "id": 1,
+                "cateogryName": "Sub Cateogry",
+                "cateogryTitle": "Sub Cateogry Title",
+                "services": [
+                    {
+                        "id": 1,
+                        "name": "Service 1",
+                        "url": "url",
+                        "icon": "icon"
+                    }
+                ]
+            }
+        ]
+    }
+]

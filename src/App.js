@@ -1,10 +1,17 @@
 import "./App.css";
-import Dropdown from "./Components/Dropdown/Dropdown";
+
+import Data from "./Data/services.json";
+
+import Filters from "./Components/Filters/Filters";
+import ServiceListing from "./Components/ServiceListing/ServiceListing";
+
+const numbers = [1, 2, 3, 4, 5];
 
 function App() {
   return (
     <div className="App">
-      <Dropdown />
+      <Filters data={Data} />
+      <ServiceListing numbers={numbers} data={Data} />
     </div>
   );
 }
