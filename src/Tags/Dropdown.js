@@ -1,5 +1,11 @@
 function Dropdown(props) {
-  return <select>{props.children}</select>;
+  const { children, event, value } = props;
+
+  return (
+    <select value={value} onChange={event}>
+      {children}
+    </select>
+  );
 }
 
 export default Dropdown;

@@ -1,19 +1,53 @@
 [
     {
         "id": 1,
-        "cateogryName": "Main Category",
-        "cateogryTitle": "Main Category Title",
+        "cateogryName": "Individual Services",
         "subCategories": [
             {
                 "id": 1,
-                "cateogryName": "Sub Cateogry",
-                "cateogryTitle": "Sub Cateogry Title",
+                "cateogryName": "Individual Services (General)",
                 "services": [
                     {
                         "id": 1,
-                        "name": "Service 1",
-                        "url": "url",
-                        "icon": "icon"
+                        "name": "Attestation of Patient Companion Lea...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Application for Scholarship",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Issue of a Replacement of a lost Dea...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "cateogryName": "Citizen Services",
+                "services": [
+                    {
+                        "id": 1,
+                        "name": "Request \"To Whom it may Concern\" Cer...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Request of “To Whom It May Concern” ...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Request Treatment Abroad",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
                     }
                 ]
             }
@@ -21,19 +55,53 @@
     },
     {
         "id": 2,
-        "cateogryName": "Main Category",
-        "cateogryTitle": "Main Category Title",
-        "subCategory": [
+        "cateogryName": "Business Services",
+        "subCategories": [
             {
                 "id": 1,
-                "cateogryName": "Sub Cateogry",
-                "cateogryTitle": "Sub Cateogry Title",
+                "cateogryName": "Business Services",
                 "services": [
                     {
                         "id": 1,
-                        "name": "Service 1",
-                        "url": "url",
-                        "icon": "icon"
+                        "name": "Disposal Permit",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Purchases System",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Renewal of Medicine Supplier Registr...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "cateogryName": "Pharmaceutical Enterprises Services ",
+                "services": [
+                    {
+                        "id": 1,
+                        "name": "Request for a register for controlle...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Authorize a Pharmaceutical Company t...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Cancellation of a License to Practic...",
+                        "url": "javascript:void(0)",
+                        "icon": "icon.png"
                     }
                 ]
             }

@@ -1,13 +1,21 @@
 function ServiceListing(props) {
-  const numbers = props.data;
-  const listItems = numbers.map((data, i) => (
-    <li key={i}>
-      {data.cateogryTitle}
-      <div>farhan</div>
-    </li>
+  const data = props.data;
+  const Services = data.map((mainCategories, i) => (
+    <div key={i}>
+      <h1>{mainCategories.cateogryName}</h1>
+      {mainCategories.subCategories.map((subCategory, a) => (
+        <div key={a}>
+          <h3>{subCategory.cateogryName}</h3>
+          <ul>
+            {subCategory.services.map((service, s) => (
+              <li key={s}>{service.name}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
   ));
-  console.log(props.data);
-  return <ul>{listItems}</ul>;
+  return <div>{Services}</div>;
 }
 
 export default ServiceListing;
