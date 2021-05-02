@@ -14,27 +14,24 @@ function SearchListing(props) {
       const completeSearch = Data.map((category) => {
         // console.log(category);
         const subCat = category.subCategories.map((sub) => {
-          const subMap = sub.services.map((service) => {
-            // console.log(service);
+          const allServices = sub.services.map((service) => {
+            console.log(service);
             return service;
           });
+
+          //   console.log(allServices);
 
           //   console.log(sub);
           const subCatSer = sub.services.filter((service) => {
             // console.log(service);
             const filteredData1 = service.name
               .toLowerCase()
-              .includes(searchValue.toLowerCase())
-              .this.setListing({
-                filteredLising: subCatSer,
-              });
+              .includes(searchValue.toLowerCase());
 
             return filteredData1;
           });
 
-          console.log(subCatSer);
-
-          //   setListing(subCatSer);
+          //   console.log(subCatSer);
 
           return subCatSer;
 
