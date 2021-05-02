@@ -7,7 +7,7 @@ function ServiceListing(props) {
           <h1>{mainCategories.cateogryName}</h1>
 
           {mainCategories.subCategories.map((subCategory, a) => (
-            <div key={a}>
+            <div className="sub-category-group" key={a}>
               <h3>{subCategory.cateogryName}</h3>
               <ul>
                 {subCategory.services.map((service, s) => (
@@ -19,7 +19,7 @@ function ServiceListing(props) {
         </div>
       ));
     } else {
-      console.log(data);
+      // console.log(data);
       const NewData = data.filter((value) => value === "test");
 
       return NewData;
@@ -27,7 +27,7 @@ function ServiceListing(props) {
   };
 
   return (
-    <div>
+    <div className="service-listing">
       <MainServices />
       {/* {Services} */}
     </div>

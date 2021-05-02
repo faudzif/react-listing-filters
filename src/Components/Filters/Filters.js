@@ -2,7 +2,7 @@ import Dropdown from "./../../Tags/Dropdown";
 import Input from "./../../Tags/Input";
 
 function Filters(props) {
-  const { search, change, secondDD, count, searchValue } = props;
+  const { search, change, change2, secondDD, count, searchValue } = props;
 
   return (
     <>
@@ -18,27 +18,19 @@ function Filters(props) {
       </Dropdown>
 
       {secondDD && (
-        <Dropdown>
+        <Dropdown event={change2}>
           {props.data[count].subCategories.map((name, i) => {
-            return <option key={i}>{name.cateogryName}</option>;
+            return (
+              <option value={i} key={i}>
+                {name.cateogryName}
+              </option>
+            );
           })}
         </Dropdown>
       )}
 
       <Input value={searchValue} event={search} />
-
-      {/* 
-      <Dropdown>
-        {props.data.map((name, i) => {
-          return <option key={i}>{name.cateogryName}</option>;
-        })}
-      </Dropdown> */}
     </>
-    // <select>
-    //   {Data.map((name, i) => {
-    //     return <option key={i}>{name.cateogryName}</option>;
-    //   })}
-    // </select>
   );
 }
 
