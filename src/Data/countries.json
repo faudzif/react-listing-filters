@@ -1,0 +1,26 @@
+[ 
+  {
+    "cities": [
+      {
+        "name": "karachi"
+      },
+      {
+        "name": "karachi"
+      },
+      {
+        "name": "sukkur"
+      }
+    ],
+    "name": "Afghanistan", "code": "AF"}, 
+  {
+    "cities": [
+      {
+        "name": "toronto"
+      },
+      {
+        "name": "karachi"
+      }
+    ],
+    "name": "land Islands", "code": "AX"}
+  
+  ]

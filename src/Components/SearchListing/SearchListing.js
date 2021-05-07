@@ -5,46 +5,49 @@ function SearchListing(props) {
 
   const [listing, setListing] = useState([]);
 
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {}, []);
+
+  function handleClick() {
+    console.log("click");
+  }
+
   const SearchData = () => {
     // console.log(Data[0].subCategories[0].services);
 
     if (searchValue !== "") {
       //   console.log("not empty");
 
+      let totalResult1;
+      let totalResult2;
+      let totalResult3;
+
       const completeSearch = Data.map((category) => {
-        // console.log(category);
-        const subCat = category.subCategories.map((sub) => {
-          const allServices = sub.services.map((service) => {
-            console.log(service);
-            return service;
-          });
-
-          //   console.log(allServices);
-
-          //   console.log(sub);
-          const subCatSer = sub.services.filter((service) => {
-            // console.log(service);
-            const filteredData1 = service.name
+        totalResult1 = category.subCategories.map((subCategory) => {
+          totalResult2 = subCategory.services.filter((service) => {
+            totalResult3 = service.name
               .toLowerCase()
               .includes(searchValue.toLowerCase());
-
-            return filteredData1;
+            // console.log(totalResult3);
+            return totalResult3;
           });
-
-          //   console.log(subCatSer);
-
-          return subCatSer;
-
-          //   return subMap;
+          // console.log(totalResult);
+          return totalResult2;
         });
-
-        return subCat;
+        // console.log(totalResult2);
+        return totalResult1;
       });
 
-      console.log(completeSearch);
+      // console.log(totalResult1);
+      // console.log(totalResult2);
+      // console.log(totalResult3);
+
+      // console.log(completeSearch);
+
       //   setListing(completeSearch);
 
-      const result = Data[0].subCategories[0].services.filter((value) => {
+      /* const result = Data[0].subCategories[0].services.filter((value) => {
         const filteredData = value.name
           .toLowerCase()
           .includes(searchValue.toLowerCase());
@@ -52,18 +55,37 @@ function SearchListing(props) {
         return filteredData;
       });
 
+      const list = completeSearch.map((value, index) => {
+        // console.log(value);
+        value.map((list, i) => {
+          // console.log(list);
+          // setListing([{ ...list }]);
+          return list;
+        });
+
+        return value;
+      });
+
       return (
         <ul className="search-listing">
+          {listing}
+
           {completeSearch.map((value, p) => (
-            <li key={p}>{value.name}</li>
+            <li className="farhan" key={p}>
+              {value.name}
+            </li>
           ))}
         </ul>
-      );
+      ); */
+
+      return <h4 onClick={handleClick}>found data</h4>;
     } else {
       //   console.log("empty");
       return <h4>no data</h4>;
     }
   };
+
+  <button>test</button>;
 
   return <SearchData />;
 }
