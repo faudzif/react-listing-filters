@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "cateogryName": "Individual Services",
+        "cateogryName": "Individual Services Main",
         "subCategories": [
             {
                 "id": 1,
-                "cateogryName": "Individual Services (General)",
+                "cateogryName": "Individual Services Sub",
                 "services": [
                     {
                         "id": 1,
@@ -29,7 +29,7 @@
             },
             {
                 "id": 2,
-                "cateogryName": "Citizen Services",
+                "cateogryName": "Citizen Services Sub",
                 "services": [
                     {
                         "id": 1,
@@ -55,7 +55,7 @@
     },
     {
         "id": 2,
-        "cateogryName": "Business Services",
+        "cateogryName": "Business Services Main",
         "subCategories": [
             {
                 "id": 1,

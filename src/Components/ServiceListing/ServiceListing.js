@@ -9,11 +9,11 @@ function ServiceListing(props) {
           {mainCategories.subCategories.map((subCategory, a) => (
             <div className="sub-category-group" key={a}>
               <h3>{subCategory.cateogryName}</h3>
-              <ul>
+              {/* <ul>
                 {subCategory.services.map((service, s) => (
                   <li key={s}>{service.name}</li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           ))}
         </div>

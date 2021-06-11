@@ -7,7 +7,9 @@ function SearchListing(props) {
 
   const [items, setItems] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    // console.log("test");
+  }, []);
 
   function handleClick() {
     console.log("click");
